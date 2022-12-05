@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleforcerti.css" type="text/css">
+    <title>Certificates</title>
+</head>
+<body>
+    <!-- <div class="certi">
+        <div class="imag"> -->
+            <div class="mySlides">
+                <div class="ph">
+                    
+                    <img class="imag" src="./udemy1.jpg" alt="image1"  >
+                </div>
+                
+                <div class="text">
+                    <p>JavaScript:This is a front to back JavaScript course for absolutely everybody. We start from fundamentals to advanced programming Without relying on frameworks or libraries at all</p>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="ph">
+                    <img class="imag" src="./udemy2.jpg" alt="image2"  >
+                </div>
+                
+                <div class="text">
+                    <p>HTML and CSS from beginning:
+                        it teaches to make responsive websites and user interfaces with modern HTML5 and CSS3+ tech like Flexbox and CSS grid
+                    </p>
+                </div>
+            </div>
+            <div class="mySlides">
+                <div class="ph">
+                    <img class="imag" src="./udemy3.jpg" alt="image3"  >
+                </div>
+                
+                <div class="text">
+                    <p>CSS Complete Guide:
+                        CSS is a programming language used to turn raw HTML pages into real beautiful sites
+                    </p>
+                </div>
+            </div>
+            <!-- <img class="mySlides" src="./udemy2.jpg" alt="img2"   >
+            <img class="mySlides" src="./udemy3.jpg" alt="img3" >
+             -->
+        <!-- </div> -->
+        <!-- <h3>The certificates are below:</h3>
+    <img class="mySlides" src="./udemy1.jpg" alt="image1"  >
+    <img class="mySlides" src="./udemy2.jpg" alt="img2"  style="background-size: contain; height: 200;" >
+    <img class="mySlides" src="./udemy3.jpg" alt="img3"style="background-size: contain; height: 200;"> -->
+    <!-- <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button> -->
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    </div>
+    
+</body>
+</html>
